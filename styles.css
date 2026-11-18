@@ -1,6 +1,7 @@
 
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
     color: #243e63;
@@ -51,4 +52,38 @@ nav {
 
 .nav__link {
     margin: 0 24px;
+}
+
+.nav__link--primary {
+    margin: 0;
+    padding: 10px 32px;
+    margin-top: 2px;
+    border-radius: 9999px;
+    color: #fff;
+    background-color:#6415ff;
+    line-height: 1.5;
+    border: none;
+    transition: all 300ms ease;
+}
+
+.btn__menu {
+    background-color: transparent;
+    border: none;
+    transition: all 300ms ease;
+}
+
+.btn__menu--close {
+    position: fixed;
+    top: 24px;
+    right: 18px;
+}
+
+button {
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .btn__menu {
+        display:block;
+    }
 }
